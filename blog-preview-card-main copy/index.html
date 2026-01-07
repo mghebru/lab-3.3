@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;
+0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Blog preview card</title>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          yellow: 'hsl(47, 88%, 63%)',
+          gray500: 'hsl(0, 0%, 42%)',
+          gray950: 'hsl(0, 0%, 7%)',
+        },
+        fontFamily: {
+          barlow: ['"Barlow Semi Condensed"', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+</head>
+
+<body class="bg-yellow font-barlow px-4 py-20 md:flex md:items-center md:justify-center">
+
+  <main class="flex flex-col items-center">
+
+    <div class="container bg-white p-4 rounded-xl drop-shadow-[8px_8px_0px_#000] flex flex-col gap-[1px] max-w-sm">
+      <img src="assets/images/illustration-article.svg" class="mainimg w-full rounded-xl drop-shadow-[0px_4px_#d2c7c7]" alt="yellow and black code image">
+      <div class="learnerdesc">
+        <p class="learning inline-block bg-yellow px-2 py-1 my-4 font-bold rounded text-base">
+          Learning</p>
+
+        <p class="publish-date text-gray950 mb-4 text-sm">Published 21 Dec 2023</p>
+
+        <h1 class="htmlcss-title text-[1.7rem] leading-[150%] font-extrabold hover:text-yellow cursor-pointer">HTML & CSS foundations</h1>
+
+        <p class="html-desc text-gray500 text-base mt-1">These languages are the backbone of every <br>
+          website, defining structure, content, and <br>presentation.</p>
+      </div>
+      <div class="nametag flex items-center gap-4 mt-4">
+        <img src="assets/images/image-avatar.webp" alt="image for greg hooper" class="w-8 h-8">
+        <p class="greg-name font-bold text-base"> Greg Hooper </p>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
